@@ -4,30 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project One</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Portfolio/style.css">
 </head>
-<body bgcolor="sky blue" id="body">
+<body bgcolor="#474E93" id="body">
     <header><b><h1 align="center" id="header">My Protfolio</h1></b></header>
     <main>
         <section class="sec1">
-            <article>
-                <h2 id="header">Introduction : </h2>
-                <p class="sec1">
-                    <b>Name &nbsp; : &nbsp; Shaik Mohammed Imtiaz</b> <br/>
-                    <b>clg Name &nbsp;: &nbsp; <b>G.Pullaiah College Of Engineering and Technology</b> <br>
-                    <b> Branch &nbsp;:&nbsp; <b>Computer Science and Engineering</b> <br>
-                    <b>Technical Skills &nbsp;:&nbsp; <b>Java,Python,HTML,Git and GitHub</b> <br>
-                    <b>Projects &nbsp;:&nbsp; <b>Protfolio Page</b>
-                </p>
-            </article>
+            <section class="csec">
+                <article>
+                    <h2 id="header">Introduction : </h2>
+                    <div id="intro">
+                        <div><img src="/Portfolio/PHOTO.jpeg" alt="Photo" width="150" height="150" id="img1"></div>
+                       <div>
+                        <h3 style="text-align: center;">Basic Information</h3>
+                        <p class="sec1">
+                            My name is Shaik Mohammed Imtiaz, and I am currently pursuing my degree in Computer Science and Engineering at G. Pullaiah College of Engineering and Technology.
+                            I have developed technical skills in Java, Python, HTML, and version control systems like Git and GitHub. These skills have been instrumental in my academic and personal projects. One of my recent projects is a Portfolio Page, which showcases my abilities in web development and my creative approach to presenting professional information.
+                            I am eager to learn, grow, and contribute to challenging projects that leverage my skills and passion for technology.</p>
+                       </div>
+                    </div>
+                </article>
+             </section>
+             <section class="csec">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                    <li>Git and Github</li>
+                </ul>
+             </section>
+             <section class="csec" >
+                <h3>PROJECTS</h3>
+                <div id="cardCon">
+                    <div class="card">
+                        <h4>Spam Mail Detection</h4>
+                        <ol>
+                            <li>Developed a Spam Mail Detection Using the Machine Learning techniques</li>
+                            <li>It First Get Trained On the data which has Spam and not spam mails</li>
+                            <li>Now The Model is tested by giving the test data</li>
+                        </ol>
+                    <button><a href="https://github.com/Shaik-GitHubb/Portfolio">Link</a></button>
+                    </div>
+                    <div class="card">
+                        <h4>Weather Forcast App</h4>
+                        <ol>
+                            <li>Developed a Weather Forcast using Api</li>
+                            <li>In this the Input Location is taken from the user and It is send through request</li>
+                            <li>The Api returns the requested data and we display it on our website</li>
+                        </ol>
+                        <button><a href="https://github.com/Shaik-GitHubb/Portfolio">Link</a></button>
+                    </div>
+                </div>
+             </section>
+
         </section>
-        <section id="sec2">
+        <section id="sec2" class="csec">
             <article>
                 <h4>My Image</h4>
-                <img src="/Portfolio/PHOTO.jpeg" alt="Photo" width="250" height="250" id="img">
+                <img src="/Portfolio/PHOTO.jpeg" alt="Photo" width="250" height="225" id="img">
+                <div class="card1">
+                    <h4>Hobbies</h4>
+                    <ul>
+                        <li>Playing chess Which helps me build strategic Knowledge.</li>
+                        <li>Playing Cricket as a recreational activity to stay active and maintain physical fitness.</li>
+                    </ul>
+                </div>
             </article>
         </section>
-        <section>
+        <section class="csec" id="form">
             <h4>Form</h4>
             <form action="#">
             <label >Name : </label>
@@ -37,6 +85,9 @@
             <label >Email : </label>
             <input type="email" placeholder="shaikmohammedImtiaz@gmail.com" class="input">
             <br>
+            <label>Message : </label>
+            <br>
+            <textarea placeholder="Description" class="input"></textarea>
             <br>
             <button id="btn" >Submit</button>
             </form>
